@@ -1,16 +1,25 @@
-# meals_app
+# Meals App
 
-A new Flutter project.
+Meals App from the [Flutter & Dart - The Complete Guide](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)  course on Udemy.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## About
+### Note: Do not take the recipes as references as they are only placeholders
+This app was emulates a Recipe App.
+- Shows several categories
+- Each meal contains information about
+  - Ingredients
+  - Steps
+  - Affordability
+  - Complexity
+  - Duration
+ 
 
-A few resources to get you started if this is your first Flutter project:
+## What can you learn from this app?
+- Navigation between screens
+- Routing
+  -Named Routes
+- OOP in Dart
+- ListView widget
+- Tabs and how to controll them
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
