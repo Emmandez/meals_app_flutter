@@ -12,23 +12,25 @@ class MealItem extends StatelessWidget {
   final Affordability affordability;
 
   MealItem(
-      {
-        @required this.id,
+      {@required this.id,
       @required this.title,
       @required this.imageUrl,
       @required this.duration,
       @required this.complexity,
-      @required this.affordability});
+      @required this.affordability,
+      });
 
   void selectMeal(BuildContext ctx) {
-    Navigator.of(ctx).pushNamed(
-      MealDetailScreen.routeName, 
-      arguments: id
-    );
+    Navigator.of(ctx)
+        .pushNamed(MealDetailScreen.routeName, arguments: id)
+        .then((result) {
+          if(result!=null){
+            //removeItem(result);
+          }
+        });
   }
 
-  String get complexityText{
-
+  String get complexityText {
     switch (complexity) {
       case Complexity.Simple:
         return 'Simple';
@@ -44,7 +46,7 @@ class MealItem extends StatelessWidget {
     }
   }
 
-  String get affordabilityText{
+  String get affordabilityText {
     switch (affordability) {
       case Affordability.Affordable:
         return 'Affordable';
@@ -56,9 +58,10 @@ class MealItem extends StatelessWidget {
         return 'Expensive';
         break;
       default:
-        return'Unknown';
+        return 'Unknown';
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -113,9 +116,21 @@ class MealItem extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  MealProperty(icon: 59573, property: duration, text: 'min',),
-                  MealProperty(icon: 59641, property: complexityText, text: '',),
-                  MealProperty(icon: 57895, property: affordabilityText, text: '',),
+                  MealProperty(
+                    icon: 59573,
+                    property: duration,
+                    text: 'min',
+                  ),
+                  MealProperty(
+                    icon: 59641,
+                    property: complexityText,
+                    text: '',
+                  ),
+                  MealProperty(
+                    icon: 57895,
+                    property: affordabilityText,
+                    text: '',
+                  ),
                 ],
               ),
             ),
