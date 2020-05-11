@@ -29,5 +29,5 @@ This app was emulates a Recipe App.
 - Tabs and how to controll them
 - Drawers
 
-### This app does not have a good state management. This topic will be cover in the following section.
+### This app does not have a good state management. This topic will be covered in the following section.
 
