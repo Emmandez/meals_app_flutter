@@ -4,8 +4,8 @@ Meals App from the [Flutter & Dart - The Complete Guide](https://www.udemy.com/c
 
 
 ## About
-### Note: Do not take the recipes as references as they are only placeholders
-This app was emulates a Recipe App.
+### Note: Do not take these recipes as reference as they are only placeholders
+This app emulates a Recipe App.
 - Shows several categories of meals.
 - Each meal contains information about:
   - Ingredients
@@ -26,7 +26,7 @@ This app was emulates a Recipe App.
   -Named Routes
 - OOP in Dart
 - ListView widget
-- Tabs and how to controll them
+- Tabs and how to control them
 - Drawers
 
 ### This app does not have a good state management. This topic will be covered in the following section.
